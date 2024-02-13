@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 3vw 5vw 5vw 72vw 3vw 3vw 3vw 3vw;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.pinIcon{
+    grid-column-start: 1;
+}
+.pinIcon img{
+    margin-top: 3px;
+}
+/*BUTTON HOME*/
+.btn-home{
+    grid-column: 2/3;
+}
+.btn-home button{
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    border: 0;
+}
+/*BUTTON CREATE*/
+.btn-create{
+    grid-column: 3/4;
+
+}
+.btn-create button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    color: black;
+    border: 0;
+    font-weight: 600;
+}
+
+/*Search Input*/
+.inp-search{
+
+}
+.inp-search input{
+    width: 72vw;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #E9E9E9;
+}
+/*Notification Icon*/
+.notIcon{
+
+}
+.notIcon img{
+ /**/
+}
+/* Message Icon*/
+.messIcon{
+
+}
+.messIcon img{
+ /**/
+}
+/*Profile*/
+.profIcon{
+
+}
+.profIcon img{
+
+}
+
+/*Strelka*/
+.strelIcon{
+
+}
+
+/*////////MMMMMAIIIIIIIIIIIIINNNNNNNNNNNNNNNNNN////////////*/
+.container-main{
+    width: 80vw;
+    margin: 20px auto;
+    columns:4;
+    column-gap: 20px;
+}
+.container-main .box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container-main .box img{
+    max-width: 100%;
+    border-radius: 15px;
+
+}
+
+
+@media (max-width: 1400px){
+    .container{
+        grid-template-columns: 5vw 8vw 8vw 72vw 5vw;
+    }
+    .inp-search input{
+        width: 72vw;
+    }
+    /*Strelka*/
+    .strelIcon{
+        display: none;
+
+    }
+    /*Notification Icon*/
+    .notIcon{
+        display: none;
+    }
+    /* Message Icon*/
+    .messIcon{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .container-main{
+        width: calc(100%-40px);
+        columns: 3;
+    }
+}
+
+@media (max-width: 860px){
+    .container-main{
+        columns: 2;
+    }
+    .container{
+        grid-template-columns: 8vw 10vw 10vw 60vw 8vw;
+    }
+    .inp-search input{
+        width: 60vw;
+    }
+    .pinIcon img{
+        margin-top: 3px;
+        width: 30px;
+        height: 30px;
+    }
+    .btn-home button{
+        background-color: black;
+        border-radius: 8px;
+        padding: 7px;
+        color: white;
+        border: 0;
+        font-size: 12px;
+    }
+    .btn-create button{
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 7px;
+        color: black;
+        border: 0;
+        font-weight: 500;
+    }
+    .profIcon img{
+        width: 30px;
+        height: 30px;
+
+    }
+    .inp-search input{
+        height: 35px;
+        border-radius: 12px;
+        border: 0;
+        background-color: #E9E9E9;
+    }
+
+
+}
+
+@media (max-width: 480px){
+    .container-main{
+        columns: 1;
+    }
+    .pinIcon img{
+        margin-top: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .btn-home button{
+        background-color: black;
+        border-radius: 8px;
+        padding: 5px;
+        color: white;
+        border: 0;
+        font-size: 12px;
+    }
+    .btn-create button{
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 5px;
+        color: black;
+        border: 0;
+        font-weight: 500;
+    }
+    .profIcon img{
+        width: 25px;
+        height: 25px;
+
+    }
+    .inp-search input{
+        height: 30px;
+        border-radius: 12px;
+        border: 0;
+        background-color: #E9E9E9;
+    }
+
+}
